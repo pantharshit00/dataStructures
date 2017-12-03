@@ -9,7 +9,7 @@ public class Node {
     data = 0;
   }
 
-  public Node(int d, Node n) {
+  public Node(Node n, int d) {
     link = n;
     data = d;
   }

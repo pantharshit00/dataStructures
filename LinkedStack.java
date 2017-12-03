@@ -40,7 +40,7 @@ public class LinkedStack {
   }
 
   public void push(int obj) {
-    top = new Node(obj, top);
+    top = new Node(top, obj);
     number++;
   }
 
@@ -50,7 +50,7 @@ public class LinkedStack {
     Node tmp = top;
     top = tmp.getLink();
     number--;
-    return top.getData();
+    return tmp.getData();
   }
 
   public int peep() {

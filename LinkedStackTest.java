@@ -11,7 +11,7 @@ public class LinkedStackTest {
       System.out.println("PUSH " + i);
     }
     System.out.println("-------POPING Test --------");
-    while (!S.isEmpty) {
+    while (!S.isEmpty()) {
       System.out.println("Pop " + S.pop());
     }
   }
